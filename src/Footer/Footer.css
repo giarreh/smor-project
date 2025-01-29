@@ -1,0 +1,26 @@
+.footer {
+  height: 50px; /* Adjust as needed */
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Make it full width */
+  border: #333 solid 2px;
+  border-radius: 2px;
+  z-index: 10; /* Ensure it stays on top of the content */
+}
+
+.buttonFooter {
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}

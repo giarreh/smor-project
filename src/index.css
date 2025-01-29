@@ -1,68 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
+  font-family: 'Fredoka One', cursive;
+  color: #5a3906; /* Toasty brown */
+  background: linear-gradient(135deg, #fff4c2, #fdff94, #fdff94);
+  background-size: 400% 400%;
+  animation: butterFlow 10s infinite ease-in-out;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth buttery background animation */
+@keyframes butterFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  font-weight: bold;
+  color: #d48a00; /* Honey-like color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+a:hover {
+  color: #c26c00;
+  text-shadow: 0px 0px 10px #ffc107;
 }
+
+
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.8em;
+  text-shadow: 4px 4px 0px #e6b800;
+  animation: melt 1.5s infinite alternate ease-in-out;
+}
+
+
+@keyframes melt {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background: #ffcf48;
+  color: #5a3906;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border-radius: 20px;
+  box-shadow: 0px 5px 0px #d4a017;
+  transition: all 0.2s ease-in-out;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+button:hover {
+  background: #ffd700;
+  transform: scale(1.02);
+  box-shadow: 0px 8px 0px #c29f13;
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 0px #b38f11;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
   }
-  a:hover {
-    color: #747bff;
-  }
+
   button {
-    background-color: #f9f9f9;
+    font-size: 1em;
+    padding: 12px 24px;
   }
 }

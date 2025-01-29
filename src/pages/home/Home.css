@@ -1,0 +1,39 @@
+.content {
+  flex: 1 0 auto;
+  flex-grow: 1; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.2em;
+  max-width: 500px;
+  margin: auto;
+}
+
+.content a {
+  color: #ffcc00; 
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content button {
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.content button:hover {
+  background-color: #e6b800;
+}

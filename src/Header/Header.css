@@ -1,0 +1,19 @@
+.header {
+  height: 80px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Ensure it stays on top of content */
+}
+
+.img-align {
+  vertical-align: middle; /* Aligns with text */
+  margin-bottom: 5px;
+}
+
+.headerText:hover {
+  cursor: pointer;
+}
