@@ -16,7 +16,40 @@ html, body, #root {
   padding-bottom: 50px; /* Adjust for the height of the footer */
 }
 
-.container{
-  
+.content {
+  flex: 1 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
+.content p {
+  font-size: 1.2em;
+  max-width: 500px;
+  margin: auto;
+}
+
+.content a {
+  color: #ffcc00; 
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content button {
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.content button:hover {
+  background-color: #e6b800;
+}

@@ -1,18 +1,21 @@
 import './Footer.css';
 import { useNavigate } from 'react-router';
+import { useRef } from 'react';
 
 export default function Footer() {
   const navigate = useNavigate();
+  const routes = ['/memory', '/snake'];
+  const indexRef = useRef(0); // Keeps track of the current index
 
-  const handleRandomRoute = () => {
-    const routes = ['/', '/Snake'];
-    const randomRoute = routes[Math.floor(Math.random() * routes.length)];
-    navigate(randomRoute);
+  const handleLoopedRoute = () => {
+    navigate(routes[indexRef.current]);
+    indexRef.current = (indexRef.current + 1) % routes.length; // Move to the next route in a loop
   };
+
   return (
     <div className="footer">
       <div className="left">© 2025 Smør - Giar Rehani</div>
-      <button className='buttonFooter' onClick={handleRandomRoute}>Click me!</button>
+      <button className='buttonFooter' onClick={handleLoopedRoute}>Click me!</button>
     </div>
   );
 }

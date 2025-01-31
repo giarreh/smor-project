@@ -1,20 +1,22 @@
-import React from 'react'
 import cover from './cards/cover.png';
 import './Memory.css';
+import { Card } from './Card';
 
-export default function SingleCard({card, handleChoice, flipped}) {
+export default function SingleCard({card, handleChoice, flipped, disabled}) {
 
   const handleClick = () => {
-    handleChoice(card);
+    if(!disabled){
+      handleChoice(card);
+    }
+
   }
 
   return (
     <div className='card'>
       <div className={flipped ? 'flipped' : ''}>
-        <img className='front' src={card.src} height={150} width={150} alt="card front" />
+        <img className='front' src={card.src}  alt="card front" />
         <img className='back' 
         src={cover} 
-        height={150} width={150} 
         alt="card back" 
         onClick={handleClick} />
       </div>

@@ -3,8 +3,8 @@ import './App.css';
 import Home from './pages/home/Home';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import Snake from './pages/Snake/Snake';
 import Memory from './pages/Memory/Memory';
+import AvocadoThreejs from './pages/AvocadoThreejs/AvocadoThreejs';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/snake" element={<Snake />} />
+            <Route path="/greeting" element={<AvocadoThreejs />} />
             <Route path="/memory" element={<Memory />} />
           </Routes>
         </div>
