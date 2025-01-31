@@ -8,7 +8,6 @@ export default function Dvd() {
   });
   const [componentImpactCount, setComponentImpactCount] = useState<number>(0);
 
-  // Function to generate a random color
   const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -25,15 +24,15 @@ export default function Dvd() {
 
   const handleComponentImpactCount = (count: number) => {
     setComponentImpactCount(count);
-    document.body.style.backgroundColor = getRandomColor(); // Change background color
+    document.body.style.backgroundColor = getRandomColor(); 
   };
 
   // Reset background color when component unmounts
   useEffect(() => {
-    const originalBackground = document.body.style.backgroundColor; // Save original color
+    const originalBackground = document.body.style.backgroundColor; 
 
     return () => {
-      document.body.style.backgroundColor = originalBackground; // Restore on unmount
+      document.body.style.backgroundColor = originalBackground;
     };
   }, []);
 
