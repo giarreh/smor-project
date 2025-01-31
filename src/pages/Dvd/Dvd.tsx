@@ -39,7 +39,6 @@ export default function Dvd() {
 
   return (
     <div ref={containerRef}>
-      <h1>Component example</h1>
       <h2>impact count: {componentImpactCount}</h2>
       <div className="component-parent">
         <DvdScreensaver speed={2}  impactCallback={handleComponentImpactCount}
