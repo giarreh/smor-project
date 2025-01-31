@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 export default function Footer() {
   const navigate = useNavigate();
-  const routes = ['/memory', '/greeting'];
+  const routes = ['/memory', '/greeting', '/dvd'];
   const indexRef = useRef(0); // Keeps track of the current index
 
   const handleLoopedRoute = () => {
