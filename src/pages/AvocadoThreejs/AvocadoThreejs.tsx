@@ -102,7 +102,7 @@ export default function AvocadoThreejs() {
 
     const controls = new OrbitControls(camera, renderer.domElement)
     controls.enableDamping = true;
-    
+    renderer.setSize(1000, 600);
     controls.addEventListener("change", () => {
       console.log(
         `Camera Position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`
@@ -126,18 +126,26 @@ export default function AvocadoThreejs() {
           }
         `}
       />
-      <div>
-        <h1>Avocado mannen hilser!</h1>
-      </div>
-      <canvas
+              <h1>Avocado mannen hilser!</h1>
+      <div
         style={{
-          width: "100%",
-          height: "100%",
-          display: "block",
-          backgroundImage: "linear-gradient(to top, #fff4c2, #fdff94, #fdff94)",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh', // This ensures the div takes full viewport height
+          backgroundImage: 'linear-gradient(to top, #fff4c2, #fdff94, #fdff94)', // Apply background to the wrapper
         }}
-        ref={canvasRef}
-      />
+      >
+        <canvas
+          style={{
+            width: "80%",  // Adjust width as needed
+            height: "80%", // Adjust height as needed
+            display: "block",
+          }}
+          ref={canvasRef}
+        />
+      </div>
     </>
   )
+  
 }
