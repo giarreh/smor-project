@@ -2,7 +2,14 @@ import cover from './cards/cover.png';
 import './Memory.css';
 import { Card } from './Card';
 
-export default function SingleCard({card, handleChoice, flipped, disabled}) {
+interface SingleCardProps {
+  card: Card;
+  handleChoice: (card: Card) => void;
+  flipped: boolean;
+  disabled: boolean;
+}
+
+export default function SingleCard({card, handleChoice, flipped, disabled}: SingleCardProps) {
 
   const handleClick = () => {
     if(!disabled){

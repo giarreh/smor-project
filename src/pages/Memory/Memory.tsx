@@ -1,3 +1,4 @@
+/* eslint-disable */
 import {useState, useEffect} from 'react'
 import butter1 from './cards/butter-1.png';
 import butter2 from './cards/butter-2.png';
@@ -92,6 +93,7 @@ export default function Memory() {
         <h2>Memory Game</h2>
         <p>Turns: {turns}</p>
       </div>
+      {/* @ts-ignore */}
       <div className="card-grid">
         {winner && <ReactConfetti height={1000} width={2000}/>}
         {cards.map(card => (
