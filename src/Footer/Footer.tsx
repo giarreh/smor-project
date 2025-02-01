@@ -8,8 +8,8 @@ export default function Footer() {
   const indexRef = useRef(0); // Keeps track of the current index
 
   const handleLoopedRoute = () => {
+    indexRef.current = (indexRef.current + 1) % routes.length;
     navigate(routes[indexRef.current]);
-    indexRef.current = (indexRef.current + 1) % routes.length; // Move to the next route in a loop
   };
 
   return (
