@@ -1,45 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './AIChat.css';
-import TypingEffect from 'react-typing-effect'; // Import TypingEffect component
+import TypingEffect from 'react-typing-effect'; 
 
-// Define the type for each message with a timestamp
+
 interface Message {
   sender: string;
   content: string;
-  timestamp: string; // New timestamp field
-  isGenerating?: boolean; // Add this field to indicate generating status
+  timestamp: string; 
+  isGenerating?: boolean;
 }
 
 export default function AIChat() {
-  // State for messages (array of message objects)
+
   const [messages, setMessages] = useState<Message[]>([]);
-
-  // State for input (user's message input)
   const [input, setInput] = useState<string>('');
-
-  // State for the conversation date
   const [date, setDate] = useState<string>('');
 
-  // Set the date when the component mounts
   useEffect(() => {
     const currentDate = new Date().toLocaleDateString(); // Format the current date
     setDate(currentDate);
   }, []);
 
-  // State to track if the first response has been made
   const [firstResponseDone, setFirstResponseDone] = useState(false);
 
-  // Handle sending messages
   const handleSend = () => {
     if (input.trim() === '') return;
 
-    // Get the current timestamp
     const timestamp = new Date().toLocaleTimeString();
 
-    // User message object with timestamp
     const userMessage: Message = { sender: 'You', content: input, timestamp };
 
-    // Add the user message
     setMessages(prevMessages => [
       ...prevMessages,
       userMessage
@@ -75,15 +65,15 @@ export default function AIChat() {
     } else {
       // For subsequent responses, show *tssss...* immediately without the thinking message
       setTimeout(() => {
-        const aiSubsequentResponseTimestamp = new Date().toLocaleTimeString(); // Timestamp for AI subsequent responses
+        const aiSubsequentResponseTimestamp = new Date().toLocaleTimeString();
         setMessages(prevMessages => [
           ...prevMessages,
           { sender: 'AI', content: `*tssss...*`, timestamp: aiSubsequentResponseTimestamp }
         ]);
-      }, 2000); // Delay before the subsequent "*tssss..." response
+      }, 2000);
     }
 
-    setInput(''); // Clear the input field
+    setInput('');
   };
 
   return (
@@ -101,7 +91,6 @@ export default function AIChat() {
             className={`chat-message ${msg.sender === 'AI' ? 'ai' : 'you'} ${msg.isGenerating ? 'generating' : ''}`}
           >
             <strong>{msg.sender}: </strong> 
-            {/* If it's generating, show TypingEffect */}
             {msg.isGenerating ? (
               <TypingEffect
                 text={msg.content}
