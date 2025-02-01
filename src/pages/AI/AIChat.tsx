@@ -59,7 +59,7 @@ export default function AIChat() {
 
           // Step 3: Set the first response flag to true
           setFirstResponseDone(true);
-        }, 18000); // Delay before the first AI response
+        }, 20000); // Delay before the first AI response
 
       }, 2000); // Delay before showing the generating message after the user message
     } else {
