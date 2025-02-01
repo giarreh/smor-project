@@ -43,7 +43,7 @@ export default function AIChat() {
           ...prevMessages,
           {
             sender: 'AI',
-            content: ' Hmm.. Jeg er jo bare en blokk med smør, hvordan kan jeg være en AI? Hvordan kan jeg svare på denne personens melding? Herregud hva skal jeg gjøre av meg.. Jeg lager vel ikke noe lyd jeg er jo bare smør? Kanskje hvis jeg hopper i en glovarm stekepanne så kan jeg lage lyd av meg. Pling Aha!',
+            content: ' Hmm.. Jeg er jo bare en blokk med smør, hvordan kan jeg være en AI? Hvordan kan jeg svare på denne personens melding? Herregud hva skal jeg gjøre av meg.. Jeg lager vel ikke noe lyd jeg er jo bare smør? Kanskje hvis jeg hopper i en glovarm stekepanne så kan jeg lage lyd av meg. *Pling* Aha!',
             timestamp: aiGeneratingTimestamp,
             isGenerating: true,
           }
