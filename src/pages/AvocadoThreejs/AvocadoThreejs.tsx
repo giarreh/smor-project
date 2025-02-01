@@ -101,7 +101,6 @@ export default function AvocadoThreejs() {
     window.addEventListener("resize", onResize, false)
 
     const controls = new OrbitControls(camera, renderer.domElement)
-    controls.enableDamping = true;
     renderer.setSize(1000, 600);
     controls.addEventListener("change", () => {
       console.log(
@@ -127,7 +126,7 @@ export default function AvocadoThreejs() {
           }
         `}
       />
-              <h1>Avocado mannen hilser!</h1>
+      <h2>Avocado mannen hilser!</h2>
       <div
         style={{
           display: 'flex',
