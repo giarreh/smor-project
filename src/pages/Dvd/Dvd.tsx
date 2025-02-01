@@ -33,7 +33,8 @@ export default function Dvd() {
 
   return (
     <div ref={containerRef}>
-      <h2>Impact count: {componentImpactCount}</h2>
+      <h2>Impact count:</h2>
+      <h2>{componentImpactCount}</h2>
       <div className="component-parent">
         <DvdScreensaver speed={2} impactCallback={handleComponentImpactCount}>
           <img src="./smor.png" alt="" height={50} />

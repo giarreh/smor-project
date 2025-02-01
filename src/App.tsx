@@ -6,6 +6,7 @@ import Footer from './Footer/Footer';
 import Memory from './pages/Memory/Memory';
 import AvocadoThreejs from './pages/AvocadoThreejs/AvocadoThreejs';
 import Dvd from './pages/Dvd/Dvd';
+import AIChat from './pages/AI/AIChat';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/greeting" element={<AvocadoThreejs />} />
             <Route path="/memory" element={<Memory />} />
             <Route path="/dvd" element={<Dvd />} />
+            <Route path="/chat" element={<AIChat />} />
           </Routes>
         </div>
         <Footer />
