@@ -1,0 +1,37 @@
+.home {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #ffefba, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.5rem;
+  color: #6b4f4f;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #d97706;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b45309;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #facc15;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #fbbf24;
+}

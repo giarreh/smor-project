@@ -10,7 +10,7 @@ export default function Header() {
       <div className='header'>
         <div>
           <h1 className='headerText' onClick={() => navigate('/')}>
-          🧈 Velkommen til { ''} 
+          Velkommen til {''} 
             <img src={SmorLogo} height={45} alt="Smør" className="img-align" />
           </h1>        
         </div>
