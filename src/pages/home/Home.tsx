@@ -19,6 +19,7 @@ export default function Home() {
 
       <br />
       <br />
+      <button className='animate__animated animate__bounceIn animate__delay-3s'>Have fun!</button>
     </div>
   );
 }
