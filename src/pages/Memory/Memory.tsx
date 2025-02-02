@@ -95,7 +95,7 @@ export default function Memory() {
       </div>
       {/* @ts-ignore */}
       <div className="card-grid">
-        {winner && <ReactConfetti height={1000} width={2000}/>}
+        {winner && <ReactConfetti height={800} width={1200}/>}
         {cards.map(card => (
           <SingleCard 
           key={card.id} 
