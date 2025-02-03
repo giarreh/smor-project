@@ -16,4 +16,5 @@
   height: 55vh;
   width: 80vw;
   border: 5px solid #ffcc00;
+  position: relative;
 }

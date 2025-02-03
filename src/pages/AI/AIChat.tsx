@@ -38,7 +38,7 @@ export default function AIChat() {
     // Step 1: Handle the thinking message only if it's the first response
     if (!firstResponseDone) {
       setTimeout(() => {
-        const aiGeneratingTimestamp = new Date().toLocaleTimeString(); // Timestamp for AI generating
+        const aiGeneratingTimestamp = new Date().toLocaleTimeString();
         setMessages(prevMessages => [
           ...prevMessages,
           {
@@ -51,7 +51,7 @@ export default function AIChat() {
 
         // Step 2: Wait before showing AI's first response
         setTimeout(() => {
-          const aiResponseTimestamp = new Date().toLocaleTimeString(); // Timestamp for AI response
+          const aiResponseTimestamp = new Date().toLocaleTimeString(); 
           setMessages(prevMessages => [
             ...prevMessages.slice(0, -1), // Remove the "thinking" message
             { sender: 'AI', content: `*tssss...*`, timestamp: aiResponseTimestamp }
@@ -59,7 +59,7 @@ export default function AIChat() {
 
           // Step 3: Set the first response flag to true
           setFirstResponseDone(true);
-        }, 20000); // Delay before the first AI response
+        }, 21000); // Delay before the first AI response
 
       }, 2000); // Delay before showing the generating message after the user message
     } else {
@@ -96,6 +96,7 @@ export default function AIChat() {
                 text={msg.content}
                 speed={50}
                 typingDelay={100}
+                eraseSpeed={0}
               />
             ) : (
               msg.content

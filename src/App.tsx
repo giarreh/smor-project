@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router';
+import { Routes, Route, BrowserRouter } from 'react-router';
 import './App.css';
 import Home from './pages/home/Home';
 import Header from './Header/Header';
@@ -10,7 +10,7 @@ import AIChat from './pages/AI/AIChat';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="container">
         <Header />
         <div className="content">
@@ -24,7 +24,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

@@ -1,3 +1,4 @@
+import RouterButton from '../../misc/RouterButton';
 import './Home.css';
 import 'animate.css';
 
@@ -19,7 +20,7 @@ export default function Home() {
 
       <br />
       <br />
-      <button className='animate__animated animate__bounceIn animate__delay-3s'>Have fun!</button>
+      <RouterButton className='animate__animated animate__bounceIn animate__delay-3s' />
     </div>
   );
 }

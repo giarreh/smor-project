@@ -14,7 +14,7 @@
   z-index: 10; /* Ensure it stays on top of the content */
 }
 
-.buttonFooter {
+.footer button {
   background-color: #ffcc00;
   color: white;
   border: none;
