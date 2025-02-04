@@ -20,7 +20,7 @@ export default function Home() {
       <br />
       <br />
       <p className='text1 animate__animated animate__fadeInUp animate__delay-5s'>
-      Our silky-smooth, ultra-fast search engine spreads you straight to the good stuff. No need to use plain old text to search because let’s face it, text is as dry as toast without butter!
+        No search bars here, just one buttery-smooth button. With a single click, you’ll be whisked away on an adventure, gliding from one delightful discovery to the next. No fuss, no crumbs—just pure, spreadable fun!
       </p>
 
       <br />
