@@ -10,7 +10,7 @@ type RouterButtonProps = {
 
 const RouterButton: React.FC<RouterButtonProps> = ({ className }) => {
   const navigate = useNavigate();
-  const routes = ['/', '/memory', '/greeting', '/dvd', '/chat'];
+  const routes = ['/greeting','/memory','/dvd', '/chat', ];
   const indexRef = useRef(0); // Keeps track of the current index
 
   const handleLoopedRoute = () => {
@@ -18,7 +18,7 @@ const RouterButton: React.FC<RouterButtonProps> = ({ className }) => {
     navigate(routes[indexRef.current]);
   };
   return (
-    <button className={className} onClick={handleLoopedRoute}>Click me!</button>
+    <button className={className} onClick={handleLoopedRoute}>More fun!</button>
   )
 }
 

@@ -194,7 +194,7 @@ export default function AvocadoThreejs() {
           }
         `}
       />
-      <h2 style={{ textAlign: "center" }}>Avocado mannen hilser!</h2>
+      <h2 style={{ textAlign: "center" }}>The Avocado man greets you!</h2>
       <div
         style={{
           display: "flex",

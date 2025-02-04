@@ -43,7 +43,7 @@ export default function AIChat() {
           ...prevMessages,
           {
             sender: 'AI',
-            content: ' Hmm.. Jeg er jo bare en blokk med smør, hvordan kan jeg være en AI? Hvordan kan jeg svare på denne personens melding? Herregud hva skal jeg gjøre av meg.. Jeg lager vel ikke noe lyd jeg er jo bare smør? Kanskje hvis jeg hopper i en glovarm stekepanne så kan jeg lage lyd av meg. *Pling* Aha!',
+            content: ' Hmm... I’m just a block of butter, how can I be an AI? How can I respond to this person’s message? Oh my God, what should I do... I probably don’t make any sound, I’m just butter, right? Maybe if I jump into a scorching hot frying pan, I can make some noise. *Pling* Aha!',
             timestamp: aiGeneratingTimestamp,
             isGenerating: true,
           }
@@ -59,7 +59,7 @@ export default function AIChat() {
 
           // Step 3: Set the first response flag to true
           setFirstResponseDone(true);
-        }, 21000); // Delay before the first AI response
+        }, 19000); // Delay before the first AI response
 
       }, 2000); // Delay before showing the generating message after the user message
     } else {
@@ -80,7 +80,7 @@ export default function AIChat() {
     <div className="chat-window">
       <div className="chat-header">
         <div>
-          <strong>SmørAI er pålogget</strong>
+          <strong>SmørAI is online</strong>
         </div>
       </div>
       <div className="chat-messages">
