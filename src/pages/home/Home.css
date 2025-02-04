@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 30vw;
   padding: 50px;
   background: linear-gradient(135deg, #ffefba, #ffffff);
   border-radius: 15px;
@@ -12,7 +11,7 @@
 }
  
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #6b4f4f;
 }
 

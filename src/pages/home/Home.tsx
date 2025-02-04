@@ -24,7 +24,6 @@ export default function Home() {
       </p>
 
       <br />
-      <br />
       <button className='animate__animated animate__bounceIn animate__delay-5s' onClick={handleNavigate}>Try me!</button>
     </div>
   );
